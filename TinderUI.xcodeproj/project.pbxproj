@@ -16,6 +16,7 @@
 		9A907DE41F0B4F8F00C1A103 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9A907DE11F0B4F8F00C1A103 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9A907DE51F0B4F8F00C1A103 /* ZLSwipeableViewSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A907DE21F0B4F8F00C1A103 /* ZLSwipeableViewSwift.framework */; };
 		9A907DE61F0B4F8F00C1A103 /* ZLSwipeableViewSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9A907DE21F0B4F8F00C1A103 /* ZLSwipeableViewSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9A907DEB1F0B565E00C1A103 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A907DEA1F0B565E00C1A103 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,7 @@
 		9A907DDB1F0B4CF400C1A103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A907DE11F0B4F8F00C1A103 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		9A907DE21F0B4F8F00C1A103 /* ZLSwipeableViewSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZLSwipeableViewSwift.framework; path = Carthage/Build/iOS/ZLSwipeableViewSwift.framework; sourceTree = "<group>"; };
+		9A907DEA1F0B565E00C1A103 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				9A907DD61F0B4CF400C1A103 /* Assets.xcassets */,
 				9A907DD81F0B4CF400C1A103 /* LaunchScreen.storyboard */,
 				9A907DDB1F0B4CF400C1A103 /* Info.plist */,
+				9A907DEA1F0B565E00C1A103 /* CardView.swift */,
 			);
 			path = TinderUI;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A907DD21F0B4CF400C1A103 /* ViewController.swift in Sources */,
+				9A907DEB1F0B565E00C1A103 /* CardView.swift in Sources */,
 				9A907DD01F0B4CF400C1A103 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,6 +322,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = TinderUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = konojunya.TinderUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -335,6 +340,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = TinderUI/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = konojunya.TinderUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";

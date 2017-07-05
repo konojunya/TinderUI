@@ -18,16 +18,23 @@ class ViewController: UIViewController {
     
     let swipeableView = ZLSwipeableView()
     let images = [
-        UIImage(named: "hasikan1"),UIImage(named: "hasikan2"),UIImage(named: "hasikan3"),
-        UIImage(named: "hasikan4"),UIImage(named: "hasikan5"),UIImage(named: "hasikan6"),UIImage(named: "hasikan7")
+        UIImage(named: "img1"),UIImage(named: "img2"),UIImage(named: "img3"),UIImage(named: "img4"),
+        UIImage(named: "img5"),UIImage(named: "img6"),UIImage(named: "img7"),UIImage(named: "img8"),
+        UIImage(named: "img9"),UIImage(named: "img10"),UIImage(named: "img11")
     ]
+    
     var imageIndex = 0
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        
         self.swipeableView.nextView = {
             return self.nextCardView()
         }
+        self.swipeableView.previousView = {
+            return self.nextCardView()
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -39,10 +46,9 @@ class ViewController: UIViewController {
 
         self.view.addSubview(self.swipeableView)
         self.swipeableView.snp.makeConstraints { make in
-            make.width.equalTo(300)
-            make.height.equalTo(300)
-            make.centerX.equalTo(self.view.center.x)
-            make.top.equalTo(self.view).offset(120)
+            make.width.equalTo(self.view.bounds.width - 50)
+            make.height.equalTo(self.view.bounds.width - 50)
+            make.center.equalTo(self.view.center)
         }
         self.swipeableView.didStart = {view, location in
             print("Did start swiping view at location: \(location)")
@@ -66,6 +72,18 @@ class ViewController: UIViewController {
             print("Did disappear swiping view")
         }
         
+        let undo = UIButton(frame: CGRect(x: self.view.center.x - 25, y: self.view.frame.height - 100, width: 50, height: 50))
+        undo.setImage(UIImage(named: "undo"), for: .normal)
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.undoTap(_:)))
+        undo.addGestureRecognizer(tapGesture)
+        
+        self.view.addSubview(undo)
+        
+    }
+    
+    func undoTap(_ sender: UITapGestureRecognizer){
+        self.swipeableView.rewind()
     }
 
     func nextCardView() -> CardView? {

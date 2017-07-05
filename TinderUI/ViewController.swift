@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     let swipeableView = ZLSwipeableView()
     let images = [
         UIImage(named: "hasikan1"),UIImage(named: "hasikan2"),UIImage(named: "hasikan3"),
-        UIImage(named: "hasikan4"),UIImage(named: "hasikan5"),UIImage(named: "hasikan6")
+        UIImage(named: "hasikan4"),UIImage(named: "hasikan5"),UIImage(named: "hasikan6"),UIImage(named: "hasikan7")
     ]
     var imageIndex = 0
     
@@ -40,10 +40,10 @@ class ViewController: UIViewController {
         self.view.backgroundColor = UIColor.white
         self.view.addSubview(self.swipeableView)
         self.swipeableView.snp.makeConstraints { make in
-            make.left.equalTo(self.view).offset(50)
-            make.right.equalTo(self.view).offset(-50)
+            make.width.equalTo(300)
+            make.height.equalTo(300)
+            make.centerX.equalTo(self.view.center.x)
             make.top.equalTo(self.view).offset(120)
-            make.bottom.equalTo(self.view).offset(-100)
         }
         self.swipeableView.didStart = {view, location in
             print("Did start swiping view at location: \(location)")

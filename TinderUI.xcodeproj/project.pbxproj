@@ -17,6 +17,8 @@
 		9A907DE51F0B4F8F00C1A103 /* ZLSwipeableViewSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A907DE21F0B4F8F00C1A103 /* ZLSwipeableViewSwift.framework */; };
 		9A907DE61F0B4F8F00C1A103 /* ZLSwipeableViewSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9A907DE21F0B4F8F00C1A103 /* ZLSwipeableViewSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9A907DEB1F0B565E00C1A103 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A907DEA1F0B565E00C1A103 /* CardView.swift */; };
+		9A907F021F0CD40000C1A103 /* ImageFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A907F011F0CD40000C1A103 /* ImageFit.framework */; };
+		9A907F031F0CD40000C1A103 /* ImageFit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9A907F011F0CD40000C1A103 /* ImageFit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +28,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				9A907F031F0CD40000C1A103 /* ImageFit.framework in Embed Frameworks */,
 				9A907DE61F0B4F8F00C1A103 /* ZLSwipeableViewSwift.framework in Embed Frameworks */,
 				9A907DE41F0B4F8F00C1A103 /* SnapKit.framework in Embed Frameworks */,
 			);
@@ -45,6 +48,7 @@
 		9A907DE11F0B4F8F00C1A103 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 		9A907DE21F0B4F8F00C1A103 /* ZLSwipeableViewSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZLSwipeableViewSwift.framework; path = Carthage/Build/iOS/ZLSwipeableViewSwift.framework; sourceTree = "<group>"; };
 		9A907DEA1F0B565E00C1A103 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		9A907F011F0CD40000C1A103 /* ImageFit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageFit.framework; path = Carthage/Build/iOS/ImageFit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A907F021F0CD40000C1A103 /* ImageFit.framework in Frameworks */,
 				9A907DE51F0B4F8F00C1A103 /* ZLSwipeableViewSwift.framework in Frameworks */,
 				9A907DE31F0B4F8F00C1A103 /* SnapKit.framework in Frameworks */,
 			);
@@ -94,6 +99,7 @@
 		9A907DE81F0B4FA000C1A103 /* frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9A907F011F0CD40000C1A103 /* ImageFit.framework */,
 				9A907DE11F0B4F8F00C1A103 /* SnapKit.framework */,
 				9A907DE21F0B4F8F00C1A103 /* ZLSwipeableViewSwift.framework */,
 			);
@@ -322,7 +328,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = TinderUI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = konojunya.TinderUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -340,7 +346,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = TinderUI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = konojunya.TinderUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ImageFit
 
 class CardView: UIView {
     
@@ -22,6 +23,8 @@ class CardView: UIView {
     }
     
     func setUp(){
+        
+        self.imageView.backgroundColor = .white
         
         // shadow
         self.layer.shadowColor = UIColor.black.cgColor
@@ -47,7 +50,7 @@ class CardView: UIView {
     }
     
     func setImage(image: UIImage) {
-        self.imageView.image = image
+        self.imageView.image = ImageFit.drawInImage(image: image, width: 300, height: 300)
     }
     
 }

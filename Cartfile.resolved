@@ -1,2 +1,3 @@
 github "SnapKit/SnapKit" "3.2.0"
+github "konojunya/ImageFit" "1.0.0"
 github "zhxnlai/ZLSwipeableViewSwift" "0.0.8"

@@ -9,6 +9,8 @@
 import UIKit
 import SnapKit
 import ZLSwipeableViewSwift
+import Foundation
+import APIKit
 
 class ViewController: UIViewController {
     
@@ -17,16 +19,30 @@ class ViewController: UIViewController {
     public var previousView: (() -> UIView?)?
     
     let swipeableView = ZLSwipeableView()
-    let images = [
-        UIImage(named: "img1"),UIImage(named: "img2"),UIImage(named: "img3"),UIImage(named: "img4"),
-        UIImage(named: "img5"),UIImage(named: "img6"),UIImage(named: "img7"),UIImage(named: "img8"),
-        UIImage(named: "img9"),UIImage(named: "img10"),UIImage(named: "img11")
-    ]
+    var tinderModel:TinderModel = TinderModel()
     
     var imageIndex = 0
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let undo = UIButton(frame: CGRect(x: self.view.center.x - 25, y: self.view.frame.height - 100, width: 50, height: 50))
+        undo.setImage(UIImage(named: "undo"), for: .normal)
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.undoTap(_:)))
+        undo.addGestureRecognizer(tapGesture)
+        
+        self.view.addSubview(undo)
+        
+        self.fetchTinderImage()
+        
+    }
+    
+    func setTinderUI(){
         
         self.swipeableView.nextView = {
             return self.nextCardView()
@@ -35,15 +51,6 @@ class ViewController: UIViewController {
             return self.nextCardView()
         }
         
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
         self.view.addSubview(self.swipeableView)
         self.swipeableView.snp.makeConstraints { make in
             make.width.equalTo(self.view.bounds.width - 50)
@@ -72,13 +79,20 @@ class ViewController: UIViewController {
             print("Did disappear swiping view")
         }
         
-        let undo = UIButton(frame: CGRect(x: self.view.center.x - 25, y: self.view.frame.height - 100, width: 50, height: 50))
-        undo.setImage(UIImage(named: "undo"), for: .normal)
+    }
+    
+    func fetchTinderImage(){
         
-        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.undoTap(_:)))
-        undo.addGestureRecognizer(tapGesture)
-        
-        self.view.addSubview(undo)
+        let request = FetchTinderRequest()
+        Session.send(request) { result in
+            switch result {
+            case .success(let tinderModel):
+                self.tinderModel = tinderModel
+                self.setTinderUI()
+            case .failure(let error):
+                print("error: \(error)")
+            }
+        }
         
     }
     
@@ -87,17 +101,18 @@ class ViewController: UIViewController {
     }
 
     func nextCardView() -> CardView? {
-        if self.imageIndex >= self.images.count {
+        if self.imageIndex >= self.tinderModel.getCount() {
             self.imageIndex = 0
         }
         
         let cardView = CardView(frame: self.swipeableView.bounds)
-        guard let image = self.images[self.imageIndex] else { return cardView }
-        cardView.setImage(image: image)
+        print(self.tinderModel.images[self.imageIndex])
+        
+        let url = URL(string: "http://tmp.fun:2000" + self.tinderModel.images[self.imageIndex])
+        cardView.setImage(url: url!)
         self.imageIndex += 1
         
         return cardView
-        
     }
     
 }

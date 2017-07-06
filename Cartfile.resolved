@@ -1,3 +1,7 @@
+github "Alamofire/Alamofire" "4.5.0"
+github "Alamofire/AlamofireImage" "3.2.0"
+github "Hearst-DD/ObjectMapper" "2.2.7"
 github "SnapKit/SnapKit" "3.2.0"
-github "konojunya/ImageFit" "1.0.0"
+github "antitypical/Result" "3.2.3"
+github "ishkawa/APIKit" "3.1.2"
 github "zhxnlai/ZLSwipeableViewSwift" "0.0.8"

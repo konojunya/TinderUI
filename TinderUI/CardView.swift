@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class CardView: UIView {
     
@@ -49,8 +50,8 @@ class CardView: UIView {
         
     }
     
-    func setImage(image: UIImage) {
-        self.imageView.image = image
+    func setImage(url: URL) {
+        self.imageView.af_setImage(withURL: url)
     }
     
 }

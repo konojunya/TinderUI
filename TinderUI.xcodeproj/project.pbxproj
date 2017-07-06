@@ -12,25 +12,39 @@
 		9A907DD51F0B4CF400C1A103 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A907DD31F0B4CF400C1A103 /* Main.storyboard */; };
 		9A907DD71F0B4CF400C1A103 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A907DD61F0B4CF400C1A103 /* Assets.xcassets */; };
 		9A907DDA1F0B4CF400C1A103 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A907DD81F0B4CF400C1A103 /* LaunchScreen.storyboard */; };
-		9A907DE31F0B4F8F00C1A103 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A907DE11F0B4F8F00C1A103 /* SnapKit.framework */; };
-		9A907DE41F0B4F8F00C1A103 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9A907DE11F0B4F8F00C1A103 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9A907DE51F0B4F8F00C1A103 /* ZLSwipeableViewSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A907DE21F0B4F8F00C1A103 /* ZLSwipeableViewSwift.framework */; };
-		9A907DE61F0B4F8F00C1A103 /* ZLSwipeableViewSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9A907DE21F0B4F8F00C1A103 /* ZLSwipeableViewSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9A907DEB1F0B565E00C1A103 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A907DEA1F0B565E00C1A103 /* CardView.swift */; };
-		9A907F021F0CD40000C1A103 /* ImageFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A907F011F0CD40000C1A103 /* ImageFit.framework */; };
-		9A907F031F0CD40000C1A103 /* ImageFit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9A907F011F0CD40000C1A103 /* ImageFit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9A907F5F1F0E342000C1A103 /* TinderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A907F5E1F0E342000C1A103 /* TinderModel.swift */; };
+		9A907F671F0E380200C1A103 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A907F601F0E380200C1A103 /* Alamofire.framework */; };
+		9A907F681F0E380200C1A103 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9A907F601F0E380200C1A103 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9A907F691F0E380200C1A103 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A907F611F0E380200C1A103 /* AlamofireImage.framework */; };
+		9A907F6A1F0E380200C1A103 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9A907F611F0E380200C1A103 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9A907F6B1F0E380200C1A103 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A907F621F0E380200C1A103 /* APIKit.framework */; };
+		9A907F6C1F0E380200C1A103 /* APIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9A907F621F0E380200C1A103 /* APIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9A907F6D1F0E380200C1A103 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A907F631F0E380200C1A103 /* ObjectMapper.framework */; };
+		9A907F6E1F0E380200C1A103 /* ObjectMapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9A907F631F0E380200C1A103 /* ObjectMapper.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9A907F6F1F0E380200C1A103 /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A907F641F0E380200C1A103 /* Result.framework */; };
+		9A907F701F0E380200C1A103 /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9A907F641F0E380200C1A103 /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9A907F711F0E380200C1A103 /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A907F651F0E380200C1A103 /* SnapKit.framework */; };
+		9A907F721F0E380200C1A103 /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9A907F651F0E380200C1A103 /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9A907F731F0E380200C1A103 /* ZLSwipeableViewSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A907F661F0E380200C1A103 /* ZLSwipeableViewSwift.framework */; };
+		9A907F741F0E380200C1A103 /* ZLSwipeableViewSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9A907F661F0E380200C1A103 /* ZLSwipeableViewSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9A907F791F0E38E700C1A103 /* TinderAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A907F781F0E38E700C1A103 /* TinderAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9A907DE71F0B4F8F00C1A103 /* Embed Frameworks */ = {
+		9A907F751F0E380200C1A103 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				9A907F031F0CD40000C1A103 /* ImageFit.framework in Embed Frameworks */,
-				9A907DE61F0B4F8F00C1A103 /* ZLSwipeableViewSwift.framework in Embed Frameworks */,
-				9A907DE41F0B4F8F00C1A103 /* SnapKit.framework in Embed Frameworks */,
+				9A907F6C1F0E380200C1A103 /* APIKit.framework in Embed Frameworks */,
+				9A907F681F0E380200C1A103 /* Alamofire.framework in Embed Frameworks */,
+				9A907F701F0E380200C1A103 /* Result.framework in Embed Frameworks */,
+				9A907F721F0E380200C1A103 /* SnapKit.framework in Embed Frameworks */,
+				9A907F6E1F0E380200C1A103 /* ObjectMapper.framework in Embed Frameworks */,
+				9A907F741F0E380200C1A103 /* ZLSwipeableViewSwift.framework in Embed Frameworks */,
+				9A907F6A1F0E380200C1A103 /* AlamofireImage.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -45,10 +59,16 @@
 		9A907DD61F0B4CF400C1A103 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A907DD91F0B4CF400C1A103 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A907DDB1F0B4CF400C1A103 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9A907DE11F0B4F8F00C1A103 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
-		9A907DE21F0B4F8F00C1A103 /* ZLSwipeableViewSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZLSwipeableViewSwift.framework; path = Carthage/Build/iOS/ZLSwipeableViewSwift.framework; sourceTree = "<group>"; };
 		9A907DEA1F0B565E00C1A103 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		9A907F011F0CD40000C1A103 /* ImageFit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageFit.framework; path = Carthage/Build/iOS/ImageFit.framework; sourceTree = "<group>"; };
+		9A907F5E1F0E342000C1A103 /* TinderModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TinderModel.swift; path = model/TinderModel.swift; sourceTree = "<group>"; };
+		9A907F601F0E380200C1A103 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		9A907F611F0E380200C1A103 /* AlamofireImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireImage.framework; path = Carthage/Build/iOS/AlamofireImage.framework; sourceTree = "<group>"; };
+		9A907F621F0E380200C1A103 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
+		9A907F631F0E380200C1A103 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
+		9A907F641F0E380200C1A103 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = Carthage/Build/iOS/Result.framework; sourceTree = "<group>"; };
+		9A907F651F0E380200C1A103 /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		9A907F661F0E380200C1A103 /* ZLSwipeableViewSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ZLSwipeableViewSwift.framework; path = Carthage/Build/iOS/ZLSwipeableViewSwift.framework; sourceTree = "<group>"; };
+		9A907F781F0E38E700C1A103 /* TinderAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TinderAPI.swift; path = request/TinderAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +76,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A907F021F0CD40000C1A103 /* ImageFit.framework in Frameworks */,
-				9A907DE51F0B4F8F00C1A103 /* ZLSwipeableViewSwift.framework in Frameworks */,
-				9A907DE31F0B4F8F00C1A103 /* SnapKit.framework in Frameworks */,
+				9A907F6B1F0E380200C1A103 /* APIKit.framework in Frameworks */,
+				9A907F671F0E380200C1A103 /* Alamofire.framework in Frameworks */,
+				9A907F6F1F0E380200C1A103 /* Result.framework in Frameworks */,
+				9A907F711F0E380200C1A103 /* SnapKit.framework in Frameworks */,
+				9A907F6D1F0E380200C1A103 /* ObjectMapper.framework in Frameworks */,
+				9A907F731F0E380200C1A103 /* ZLSwipeableViewSwift.framework in Frameworks */,
+				9A907F691F0E380200C1A103 /* AlamofireImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,7 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				9A907DCE1F0B4CF400C1A103 /* TinderUI */,
-				9A907DE81F0B4FA000C1A103 /* frameworks */,
+				9A907F761F0E380700C1A103 /* frameworks */,
 				9A907DCD1F0B4CF400C1A103 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -85,6 +109,8 @@
 		9A907DCE1F0B4CF400C1A103 /* TinderUI */ = {
 			isa = PBXGroup;
 			children = (
+				9A907F771F0E38D300C1A103 /* request */,
+				9A907F5D1F0E340100C1A103 /* model */,
 				9A907DCF1F0B4CF400C1A103 /* AppDelegate.swift */,
 				9A907DD11F0B4CF400C1A103 /* ViewController.swift */,
 				9A907DD31F0B4CF400C1A103 /* Main.storyboard */,
@@ -96,14 +122,34 @@
 			path = TinderUI;
 			sourceTree = "<group>";
 		};
-		9A907DE81F0B4FA000C1A103 /* frameworks */ = {
+		9A907F5D1F0E340100C1A103 /* model */ = {
 			isa = PBXGroup;
 			children = (
-				9A907F011F0CD40000C1A103 /* ImageFit.framework */,
-				9A907DE11F0B4F8F00C1A103 /* SnapKit.framework */,
-				9A907DE21F0B4F8F00C1A103 /* ZLSwipeableViewSwift.framework */,
+				9A907F5E1F0E342000C1A103 /* TinderModel.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		9A907F761F0E380700C1A103 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A907F601F0E380200C1A103 /* Alamofire.framework */,
+				9A907F611F0E380200C1A103 /* AlamofireImage.framework */,
+				9A907F621F0E380200C1A103 /* APIKit.framework */,
+				9A907F631F0E380200C1A103 /* ObjectMapper.framework */,
+				9A907F641F0E380200C1A103 /* Result.framework */,
+				9A907F651F0E380200C1A103 /* SnapKit.framework */,
+				9A907F661F0E380200C1A103 /* ZLSwipeableViewSwift.framework */,
 			);
 			name = frameworks;
+			sourceTree = "<group>";
+		};
+		9A907F771F0E38D300C1A103 /* request */ = {
+			isa = PBXGroup;
+			children = (
+				9A907F781F0E38E700C1A103 /* TinderAPI.swift */,
+			);
+			name = request;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -116,8 +162,8 @@
 				9A907DC81F0B4CF400C1A103 /* Sources */,
 				9A907DC91F0B4CF400C1A103 /* Frameworks */,
 				9A907DCA1F0B4CF400C1A103 /* Resources */,
-				9A907DE71F0B4F8F00C1A103 /* Embed Frameworks */,
 				9A907DE91F0B4FAF00C1A103 /* ShellScript */,
+				9A907F751F0E380200C1A103 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -197,9 +243,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A907F791F0E38E700C1A103 /* TinderAPI.swift in Sources */,
 				9A907DD21F0B4CF400C1A103 /* ViewController.swift in Sources */,
 				9A907DEB1F0B565E00C1A103 /* CardView.swift in Sources */,
 				9A907DD01F0B4CF400C1A103 /* AppDelegate.swift in Sources */,
+				9A907F5F1F0E342000C1A103 /* TinderModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
